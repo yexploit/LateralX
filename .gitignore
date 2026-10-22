@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+
+# Runtime data
+backend/data/
+*.db
+
+# Node
+node_modules/
+frontend/dist/
+.DS_Store
+*.log
+.npm
+
+# Keep shipped UI (served by Python)
+!backend/app/web/
+!backend/app/web/**
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+Thumbs.db

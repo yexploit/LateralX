@@ -1,0 +1,108 @@
+[
+  {
+    "EventID": 4624,
+    "TimeCreated": "2026-03-12T09:20:00+00:00",
+    "Computer": "WORKSTATION-01.corp.local",
+    "Channel": "Security",
+    "EventData": {
+      "TargetUserName": "jdoe",
+      "TargetDomainName": "CORP",
+      "TargetUserSid": "S-1-5-21-1000-2000-3000-1105",
+      "LogonType": "2",
+      "IpAddress": "-",
+      "WorkstationName": "WORKSTATION-01"
+    }
+  },
+  {
+    "EventID": 1,
+    "TimeCreated": "2026-03-12T09:22:00+00:00",
+    "Computer": "WORKSTATION-01.corp.local",
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "EventData": {
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "CommandLine": "powershell.exe -NoP -W Hidden -Enc SQBFAFgA",
+      "ParentImage": "C:\\Windows\\explorer.exe",
+      "User": "CORP\\jdoe",
+      "ProcessId": "4401"
+    }
+  },
+  {
+    "EventID": 1,
+    "TimeCreated": "2026-03-12T09:23:00+00:00",
+    "Computer": "WORKSTATION-01.corp.local",
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "EventData": {
+      "Image": "C:\\Users\\jdoe\\AppData\\Local\\Temp\\mimikatz.exe",
+      "CommandLine": "mimikatz.exe privilege::debug sekurlsa::logonpasswords",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "User": "CORP\\jdoe",
+      "ProcessId": "4510"
+    }
+  },
+  {
+    "EventID": 4624,
+    "TimeCreated": "2026-03-12T09:30:00+00:00",
+    "Computer": "FILESERVER-01.corp.local",
+    "Channel": "Security",
+    "EventData": {
+      "TargetUserName": "administrator",
+      "TargetDomainName": "CORP",
+      "TargetUserSid": "S-1-5-21-1000-2000-3000-500",
+      "LogonType": "3",
+      "IpAddress": "10.10.20.41",
+      "WorkstationName": "WORKSTATION-01"
+    }
+  },
+  {
+    "EventID": 4624,
+    "TimeCreated": "2026-03-12T09:35:00+00:00",
+    "Computer": "FILESERVER-01.corp.local",
+    "Channel": "Security",
+    "EventData": {
+      "TargetUserName": "administrator",
+      "TargetDomainName": "CORP",
+      "LogonType": "10",
+      "IpAddress": "10.10.20.41",
+      "WorkstationName": "WORKSTATION-01"
+    }
+  },
+  {
+    "EventID": 1,
+    "TimeCreated": "2026-03-12T09:36:00+00:00",
+    "Computer": "FILESERVER-01.corp.local",
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "EventData": {
+      "Image": "C:\\Windows\\PSEXESVC.exe",
+      "CommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "User": "CORP\\administrator",
+      "ProcessId": "1888"
+    }
+  },
+  {
+    "EventID": 4624,
+    "TimeCreated": "2026-03-12T09:45:00+00:00",
+    "Computer": "DC-01.corp.local",
+    "Channel": "Security",
+    "EventData": {
+      "TargetUserName": "administrator",
+      "TargetDomainName": "CORP",
+      "LogonType": "3",
+      "IpAddress": "10.10.20.15",
+      "WorkstationName": "FILESERVER-01"
+    }
+  },
+  {
+    "EventID": 4662,
+    "TimeCreated": "2026-03-12T09:46:00+00:00",
+    "Computer": "DC-01.corp.local",
+    "Channel": "Security",
+    "EventData": {
+      "SubjectUserName": "administrator",
+      "SubjectDomainName": "CORP",
+      "ObjectServer": "DS",
+      "Properties": "Replicating Directory Changes All",
+      "AccessMask": "0x100"
+    }
+  }
+]
